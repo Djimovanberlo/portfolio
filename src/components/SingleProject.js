@@ -1,12 +1,12 @@
 import React from "react";
 
-const SingleProject = () => {
+const SingleProject = (props) => {
   return (
     <>
       <div>{props.name}</div>
       <div>
         {props.github ? (
-          <a href={props.github}>
+          <a href={props.github} target="_blank">
             <img src={require("../img/icons/Github.png")} />
           </a>
         ) : null}
@@ -14,9 +14,9 @@ const SingleProject = () => {
       <div>
         {props.stack.map((tech, index) => {
           return tech ? (
-            <Image
+            <img
+              src={require(`../img/icons/${tech}.png`)}
               style={{ resizeMode: "cover", width: 35, height: 35 }}
-              source={require(`../img/icons/${tech}.png`)}
               key={index}
             />
           ) : null;
@@ -25,7 +25,7 @@ const SingleProject = () => {
       <div>{props.description ? props.description : null}</div>
       <div>
         {props.link ? (
-          <a href={props.link} style={{ cursor: "pointer" }}>
+          <a href={props.link} target="_blank" style={{ cursor: "pointer" }}>
             Link to project
           </a>
         ) : null}

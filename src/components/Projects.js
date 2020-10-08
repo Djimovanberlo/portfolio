@@ -1,7 +1,7 @@
 import React from "react";
 import SingleProject from "./SingleProject";
 
-import { projectList } from "../constants";
+import { projectList } from "../constants/projectList";
 
 const Projects = () => {
   return (

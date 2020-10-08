@@ -3,10 +3,10 @@ import React, { Button } from "react";
 const Contact = () => {
   return (
     <>
-      <a href="https://github.com/Djimovanberlo">
+      <a href="https://github.com/Djimovanberlo" target="_blank">
         <img src={require("../img/icons/Github.png")} />
       </a>
-      <a href="https://www.linkedin.com/in/djimo-van-berlo/">
+      <a href="https://www.linkedin.com/in/djimo-van-berlo/" target="_blank">
         <img src={require("../img/icons/LinkedIn.png")} />
       </a>
       <div>+31 (0) 6 34 85 85 54</div>
