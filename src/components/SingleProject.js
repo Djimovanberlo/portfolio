@@ -19,7 +19,8 @@ const SingleProject = (props) => {
               style={{ resizeMode: "cover", width: 35, height: 35 }}
               key={index}
             />
-          ) : null;
+          ) : // TO DO: Add the tech as mouseover tooltip
+          null;
         })}
       </div>
       <div>{props.description ? props.description : null}</div>
