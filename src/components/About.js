@@ -1,4 +1,4 @@
-import React, { Button } from "react";
+import React from "react";
 
 const About = () => {
   return (
@@ -13,7 +13,7 @@ const About = () => {
         find my resume, info about me and projects have been working on. Get in
         touch!
       </div>
-      <Button variant="outline-dark">Download Resume</Button>
+      <button>Download resume</button>
       {/* TO DO: button actually downloads resume */}
     </>
   );
