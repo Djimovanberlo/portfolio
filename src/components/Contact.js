@@ -4,11 +4,6 @@ import "../styles/Contact.css";
 const Contact = () => {
   return (
     <div>
-      {/* <img
-        src={require("../img/Djimo3.jpg")}
-        className="picture"
-        style={{ zIndex: 3 }}
-      /> */}
       <div style={{ left: 280, paddingLeft: 280, zIndex: 1 }}>
         <a href="https://github.com/Djimovanberlo" target="_blank">
           <img
