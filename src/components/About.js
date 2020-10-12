@@ -4,11 +4,11 @@ import "../styles/About.css";
 const About = () => {
   return (
     <div>
-      <img
+      {/* <img
         src={require("../img/Djimo.jpg")}
         className="picture"
         style={{ zIndex: 3 }}
-      />
+      /> */}
       <div style={{ left: 280, paddingLeft: 280, zIndex: 1 }}>
         {/* TO DO: Hyperlink to contactpage @ "Get in touch!" */}I like to play
         with some code, cook up some games and develop some dinner. In july I

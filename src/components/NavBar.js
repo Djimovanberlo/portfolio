@@ -1,14 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink, BrowserRouter as Router } from "react-router-dom";
 import "../styles/NavBar.css";
 
 const NavBar = () => {
+  const [picture, set_pitcure] = useState(1);
+
   return (
     <>
+      <img
+        src={require(`../img/Djimo${picture}.jpg`)}
+        className="picture"
+        style={{ zIndex: 3 }}
+      />
       <div className="sidenav">
-        <NavLink to="/">About</NavLink>
-        <NavLink to="/projects">Projects</NavLink>
-        <NavLink to="/contact">Contact</NavLink>
+        <NavLink
+          onClick={() => {
+            set_pitcure(1);
+          }}
+          to="/"
+        >
+          About
+        </NavLink>
+        <NavLink
+          onClick={() => {
+            set_pitcure(3);
+          }}
+          to="/projects"
+        >
+          Projects
+        </NavLink>
+        <NavLink
+          onClick={() => {
+            set_pitcure(3);
+          }}
+          to="/contact"
+        >
+          Contact
+        </NavLink>
       </div>
     </>
   );

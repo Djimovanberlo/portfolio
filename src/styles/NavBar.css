@@ -11,7 +11,7 @@
   overflow-x: hidden; /* Disable horizontal scroll */
   padding: 20px 60px 20px 60px;
   padding-top: 325px;
-  letter-spacing: 2px;
+  letter-spacing: 5px;
 }
 
 /* The navigation menu links */
@@ -27,4 +27,15 @@
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
   color: #818181;
+}
+
+.picture {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+  padding: 15px 15px 15px 15px;
+  z-index: 3;
 }
