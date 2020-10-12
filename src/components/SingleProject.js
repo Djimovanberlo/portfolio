@@ -23,12 +23,13 @@ const SingleProject = (props) => {
         {props.stack.map((tech, index) => {
           return tech ? (
             <img
+              className="tooltip"
               src={require(`../img/icons/${tech}.png`)}
               style={{ resizeMode: "cover", width: 35, height: 35 }}
               key={index}
+              title={tech}
             />
-          ) : // TO DO: Add the tech as mouseover tooltip
-          null;
+          ) : null;
         })}
       </div>
       <div>{props.description ? props.description : null}</div>
