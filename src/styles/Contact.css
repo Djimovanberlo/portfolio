@@ -1,25 +1,9 @@
-/* .picture {
-  position: relative;
-  top: 10px;
-  left: -430px;
-  z-index: 1;
-} */
-/* 
-.name {
-  text-decoration: none;
-  font-size: 50px;
-  color: #f1f1f1;
+.content {
+  position: absolute;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-align: left;
+  left: 280px;
+  top: 200px;
+  padding: 40px;
 }
-
-.title {
-  text-decoration: none;
-  font-size: 25px;
-  color: #f1f1f1;
-}
-
-.img {
-  border-radius: 50%;
-  height: 200;
-  width: 200;
-  padding: 20px 20px 20px 20px;
-} */
