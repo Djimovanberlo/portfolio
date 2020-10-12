@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavLink, BrowserRouter as Router } from "react-router-dom";
-import "../styles/NavBar.css";
+import "../styles/navBar.css";
 
 const NavBar = () => {
   const [picture, set_pitcure] = useState(1);
