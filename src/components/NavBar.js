@@ -3,15 +3,16 @@ import { NavLink, BrowserRouter as Router } from "react-router-dom";
 
 const NavBar = () => {
   return (
-    <div>
-      {/* <Router> */}
-      <NavLink to="/">About</NavLink>
-      {" | "}
-      <NavLink to="/projects">Projects</NavLink>
-      {" | "}
-      <NavLink to="/contact">Contact</NavLink>
-      {/* </Router> */}
-    </div>
+    <>
+      <div>Djimo</div>
+      <div>
+        <NavLink to="/">About</NavLink>
+        {" | "}
+        <NavLink to="/projects">Projects</NavLink>
+        {" | "}
+        <NavLink to="/contact">Contact</NavLink>
+      </div>
+    </>
   );
 };
 

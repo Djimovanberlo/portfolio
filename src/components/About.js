@@ -4,7 +4,7 @@ const About = () => {
   return (
     <>
       <img src={require("../img/Djimo.jpg")} />
-      <div>Djimo van Berlo</div>
+      {/* <div>Djimo van Berlo</div> */}
       <div>
         {/* TO DO: Hyperlink to contactpage @ "Get in touch!" */}I like to play
         with some code, cook up some games and develop some dinner. In july I
