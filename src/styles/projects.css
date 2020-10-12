@@ -1,0 +1,9 @@
+.content {
+  position: absolute;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-align: left;
+  left: 280px;
+  top: 200px;
+  padding: 40px;
+}
