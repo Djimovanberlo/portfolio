@@ -9,3 +9,21 @@
   height: 600px;
   width: 1500px;
 }
+
+.button {
+  background-color: #03989e;
+  border: 2px solid #03989e;
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: white;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  background-color: white;
+  border: 2px solid #03989e;
+  color: #03989e;
+}

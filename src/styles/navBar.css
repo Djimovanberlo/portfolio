@@ -23,6 +23,7 @@
   color: #f1f1f1;
   display: inline-block;
   justify-content: center;
+  transition-duration: 0.4s;
 }
 
 /* When you mouse over the navigation links, change their color */

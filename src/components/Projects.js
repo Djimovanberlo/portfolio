@@ -56,8 +56,8 @@ const Projects = () => {
             );
           })}
         </Slider>
-        <ButtonBack>Back</ButtonBack>
-        <ButtonNext>Next</ButtonNext>
+        <ButtonBack className="button">Back</ButtonBack>
+        <ButtonNext className="button">Next</ButtonNext>
       </CarouselProvider>
     </div>
   );
