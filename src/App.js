@@ -9,8 +9,6 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 
 const App = () => {
-  // TO DO: PICTURE CHANGES FOR EACH PAGE
-
   return (
     <div className="App">
       <Switch>
