@@ -22,35 +22,44 @@ const SingleProject = (props) => {
         className="slideContainer"
         style={{
           padding: 20,
+          height: "100%",
           display: "grid",
-          // gridTemplateColumns: "auto auto auto auto",
+          gridTemplateColumns: "repeat(3, 1fr)",
+          gridTemplateRows: "repeat(4, 1fr)",
+          gridColumnGap: "1px",
+          gridRowGap: "1px",
         }}
       >
-        <div style={{ gridRow: 1 }}>
-          <img
-            src={require(`../img/projects/${props.name}.png`)}
-            style={{
-              resizeMode: "cover",
-              width: 100,
-              height: 100,
-              margin: 10,
-              borderRadius: 25,
-            }}
-          />
-          <h2>{props.name}</h2>
-          <div>
-            {props.github ? (
-              <a
-                href={props.github}
-                target="_blank"
-                style={{ cursor: "pointer" }}
-              >
-                <img src={require("../img/icons/Github.png")} />
-              </a>
-            ) : null}
-          </div>
+        {/* ICON - START ROW 1*/}
+        <img
+          src={require(`../img/projects/${props.name}.png`)}
+          style={{
+            resizeMode: "cover",
+            width: 100,
+            height: 100,
+            margin: 10,
+            borderRadius: 25,
+            gridArea: 1 / 1 / 2 / 2,
+          }}
+        />
+        {/* NAME */}
+        <h2 style={{ gridArea: 1 / 2 / 2 / 3 }}>{props.name}</h2>
+        {/* GITHUB */}
+        <div style={{ gridArea: 1 / 3 / 2 / 4 }}>
+          {props.github ? (
+            <a
+              href={props.github}
+              target="_blank"
+              style={{
+                cursor: "pointer",
+              }}
+            >
+              <img src={require("../img/icons/Github.png")} />
+            </a>
+          ) : null}
         </div>
-        <div style={{ gridRow: 2 }}>
+        {/* TECH STACK - ROW 2 */}
+        <div style={{ gridArea: "2 / 1 / 3 / 4" }}>
           {props.stack.map((tech, index) => {
             return tech ? (
               <img
@@ -68,10 +77,17 @@ const SingleProject = (props) => {
             ) : null;
           })}
         </div>
-        <div style={{ gridRow: 3 }}>
+        {/* DESCRIPTION - ROW 3 */}
+        <div
+          style={{
+            gridArea: "3 / 1 / 4 / 4",
+            textAlign: "justify",
+          }}
+        >
           {props.description ? props.description : null}
         </div>
-        <div style={{ gridRow: 4 }}>
+        {/* LINK TO PROJECT - ROW 4*/}
+        <div style={{ gridArea: "4 / 1 / 5 / 4" }}>
           {props.link ? (
             <a href={props.link} target="_blank" style={{ cursor: "pointer" }}>
               Link to project
