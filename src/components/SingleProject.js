@@ -11,7 +11,7 @@ import "pure-react-carousel/dist/react-carousel.es.css";
 const SingleProject = (props) => {
   return (
     <Slide index={props.id}>
-      <div>{props.name}</div>
+      <h2>{props.name}</h2>
       <div>
         {props.github ? (
           <a href={props.github} target="_blank" style={{ cursor: "pointer" }}>
@@ -25,7 +25,7 @@ const SingleProject = (props) => {
             <img
               className="tooltip"
               src={require(`../img/icons/${tech}.png`)}
-              style={{ resizeMode: "cover", width: 35, height: 35 }}
+              style={{ resizeMode: "cover", width: 35, height: 35, margin: 10 }}
               key={index}
               title={tech}
             />

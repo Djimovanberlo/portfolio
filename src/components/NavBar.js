@@ -8,7 +8,7 @@ const NavBar = () => {
   return (
     <>
       <img
-        src={require(`../img/Djimo${picture}.jpg`)}
+        src={require(`../img/djimo/Djimo${picture}.jpg`)}
         className="picture"
         style={{ zIndex: 3 }}
       />
@@ -23,7 +23,7 @@ const NavBar = () => {
         </NavLink>
         <NavLink
           onClick={() => {
-            set_pitcure(3);
+            set_pitcure(2);
           }}
           to="/projects"
         >

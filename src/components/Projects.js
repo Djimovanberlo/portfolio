@@ -5,6 +5,7 @@ import {
   Slide,
   ButtonBack,
   ButtonNext,
+  visibleSlides,
 } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
 import "../styles/projects.css";
@@ -17,7 +18,8 @@ const Projects = () => {
     <div className="projectsContent">
       <CarouselProvider
         naturalSlideWidth={100}
-        naturalSlideHeight={125}
+        naturalSlideHeight={100}
+        visibleSlides={3}
         totalSlides={projectList.length}
       >
         <Slider>
