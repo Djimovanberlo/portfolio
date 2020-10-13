@@ -45,7 +45,7 @@ export const projectList = [
   },
   {
     id: 4,
-    name: "Student platform",
+    name: "Student Platform",
     stack: [null],
     description:
       "I would like to build a simple platform that connects school- and college students with peers around the world. I feel it's better to learn language and culture by interacting, not exclusively reading books:)",

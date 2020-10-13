@@ -1,4 +1,4 @@
-.content {
+.projectsContent {
   position: absolute;
   font-size: 20px;
   letter-spacing: 2px;
@@ -6,6 +6,8 @@
   left: 280px;
   top: 200px;
   padding: 40px;
+  height: 600px;
+  width: 1500px;
 }
 
 .button {
@@ -18,7 +20,6 @@
   margin-top: 10px;
   margin-bottom: 10px;
   transition-duration: 0.4s;
-  cursor: pointer;
 }
 
 .button:hover {

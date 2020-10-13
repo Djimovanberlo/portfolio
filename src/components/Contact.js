@@ -4,13 +4,21 @@ import "../styles/contact.css";
 const Contact = () => {
   return (
     <div className="content">
-      <a href="https://github.com/Djimovanberlo" target="_blank">
+      <a
+        href="https://github.com/Djimovanberlo"
+        target="_blank"
+        style={{ cursor: "pointer" }}
+      >
         <img
           src={require("../img/icons/Github.png")}
           style={{ height: 30, width: 30, padding: 5 }}
         />
       </a>
-      <a href="https://www.linkedin.com/in/djimo-van-berlo/" target="_blank">
+      <a
+        href="https://www.linkedin.com/in/djimo-van-berlo/"
+        target="_blank"
+        style={{ cursor: "pointer" }}
+      >
         <img
           src={require("../img/icons/LinkedIn.png")}
           style={{ height: 30, width: 30, padding: 5 }}
@@ -20,6 +28,7 @@ const Contact = () => {
       <div>djimovanberlo@gmail.com</div>
       <div>Rampe du Val 9b2</div>
       <div>1348 Louvain-La-Neuve</div>
+      <div>Belgium</div>
     </div>
   );
 };

@@ -1,31 +1,93 @@
 import React from "react";
+import {
+  CarouselProvider,
+  Slider,
+  Slide,
+  ButtonBack,
+  ButtonNext,
+} from "pure-react-carousel";
+import "pure-react-carousel/dist/react-carousel.es.css";
 
 const SingleProject = (props) => {
   return (
-    <div>
-      <div style={{ marginLeft: 280 }}>
-        <div>{props.name}</div>
-        <div>
+    <Slide
+      index={props.id}
+      style={{
+        color: props.slideFontColor,
+        backgroundColor: props.slideBackgroundColor,
+        border: props.slideBorder,
+      }}
+    >
+      <div
+        className="slideContainer"
+        style={{
+          padding: 20,
+          height: "100%",
+          display: "grid",
+          gridTemplateColumns: "repeat(3, 1fr)",
+          gridTemplateRows: "repeat(4, 1fr)",
+          gridColumnGap: "1px",
+          gridRowGap: "1px",
+        }}
+      >
+        {/* ICON - START ROW 1*/}
+        <img
+          src={require(`../img/projects/${props.name}.png`)}
+          style={{
+            resizeMode: "cover",
+            width: 100,
+            height: 100,
+            margin: 10,
+            borderRadius: 25,
+            gridArea: 1 / 1 / 2 / 2,
+          }}
+        />
+        {/* NAME */}
+        <h2 style={{ gridArea: 1 / 2 / 2 / 3 }}>{props.name}</h2>
+        {/* GITHUB */}
+        <div style={{ gridArea: 1 / 3 / 2 / 4 }}>
           {props.github ? (
-            <a href={props.github} target="_blank">
+            <a
+              href={props.github}
+              target="_blank"
+              style={{
+                cursor: "pointer",
+              }}
+            >
               <img src={require("../img/icons/Github.png")} />
             </a>
           ) : null}
         </div>
-        <div>
+        {/* TECH STACK - ROW 2 */}
+        <div style={{ gridArea: "2 / 1 / 3 / 4" }}>
           {props.stack.map((tech, index) => {
             return tech ? (
               <img
+                className="tooltip"
                 src={require(`../img/icons/${tech}.png`)}
-                style={{ resizeMode: "cover", width: 35, height: 35 }}
+                style={{
+                  resizeMode: "cover",
+                  width: 35,
+                  height: 35,
+                  margin: 10,
+                }}
                 key={index}
+                title={tech}
               />
-            ) : // TO DO: Add the tech as mouseover tooltip
-            null;
+            ) : null;
           })}
         </div>
-        <div>{props.description ? props.description : null}</div>
-        <div>
+        {/* DESCRIPTION - ROW 3 */}
+        <div
+          style={{
+            gridArea: "3 / 1 / 4 / 4",
+            textAlign: "justify",
+          }}
+        >
+          {props.description ? props.description : null}
+        </div>
+        {/* LINK TO PROJECT - ROW 4*/}
+        <div style={{ gridArea: "4 / 1 / 5 / 4" }}>
           {props.link ? (
             <a href={props.link} target="_blank" style={{ cursor: "pointer" }}>
               Link to project
@@ -33,7 +95,7 @@ const SingleProject = (props) => {
           ) : null}
         </div>
       </div>
-    </div>
+    </Slide>
   );
 };
 
