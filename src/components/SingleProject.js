@@ -14,7 +14,7 @@ const SingleProject = (props) => {
       <div>{props.name}</div>
       <div>
         {props.github ? (
-          <a href={props.github} target="_blank">
+          <a href={props.github} target="_blank" style={{ cursor: "pointer" }}>
             <img src={require("../img/icons/Github.png")} />
           </a>
         ) : null}
