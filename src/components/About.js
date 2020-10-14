@@ -9,7 +9,10 @@ const About = () => {
         and develop some dinner. In july I graduated from the Codaisseur
         academy, an intensive full stack JavaScript bootcamp. I have been coding
         since. In this portfolio you'll find my resume, info about me and
-        projects have been working on. Get in touch!
+        projects have been working on.{" "}
+        <a href="/contact" style={{ textDecoration: "none", color: "#03989e" }}>
+          Get in touch!
+        </a>
       </div>
       <button className="button">Download resume</button>
       {/* TO DO: button actually downloads resume */}
