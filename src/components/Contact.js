@@ -25,7 +25,13 @@ const Contact = () => {
         />
       </a>
       <div>+31 (0) 6 34 85 85 54</div>
-      <div>djimovanberlo@gmail.com</div>
+      <a
+        style={{ textDecoration: "none", color: "#03989e" }}
+        href="mailto:djimovanberlo@gmail.com"
+        target="_blank"
+      >
+        djimovanberlo@gmail.com
+      </a>
       <div>Rampe du Val 9b2</div>
       <div>1348 Louvain-La-Neuve</div>
       <div>Belgium</div>

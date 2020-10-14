@@ -8,6 +8,24 @@
   padding: 40px;
 }
 
+.lineWithText {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.lineWithText::before,
+.lineWithText::after {
+  content: "";
+  flex: 1;
+  border-bottom: 3px solid #03989e;
+}
+.lineWithText::before {
+  margin-right: 1.5em;
+}
+.lineWithText::after {
+  margin-left: 1.5em;
+}
+
 .button {
   background-color: #03989e;
   border: 2px solid #03989e;
@@ -25,4 +43,12 @@
   background-color: white;
   border: 2px solid #03989e;
   color: #03989e;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  background-color: #03989e;
+  border-radius: 50%;
+  display: inline-block;
 }

@@ -99,7 +99,6 @@ const SingleProject = (props) => {
               href={props.link}
               target="_blank"
               style={{
-                textDecoration: "underline",
                 color: props.slideFontColor,
               }}
             >
