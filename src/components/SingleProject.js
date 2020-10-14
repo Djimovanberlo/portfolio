@@ -95,7 +95,14 @@ const SingleProject = (props) => {
         {/* LINK TO PROJECT - ROW 4*/}
         <div style={{ gridArea: "4 / 1 / 5 / 2" }}>
           {props.link ? (
-            <a href={props.link} target="_blank" style={{ cursor: "pointer" }}>
+            <a
+              href={props.link}
+              target="_blank"
+              style={{
+                textDecoration: "underline",
+                color: props.slideFontColor,
+              }}
+            >
               Link to project
             </a>
           ) : null}
