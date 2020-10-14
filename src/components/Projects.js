@@ -21,13 +21,10 @@ const Projects = () => {
   ];
 
   const slideStyleSelector = (projectIndex) => {
-    if ((projectIndex + 1) % 3 === 0) {
-      return 2;
-    } else if ((projectIndex + 1) % 2 === 0) {
-      return 1;
-    } else {
-      return 0;
+    while (projectIndex + 1 > 3) {
+      projectIndex = projectIndex - 3;
     }
+    return projectIndex;
   };
 
   return (
