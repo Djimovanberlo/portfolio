@@ -16,7 +16,8 @@ export const projectList = [
       "Soaring flocks is my portfolio project for Codaisseur. I built a full stack game, where players can register/login. Every night, players get awarded resources, which they can then freely trade or invest into more resources. Soaring Flocks also contains a chatbox, built with GraphQL subscriptions.",
     link: "http://soaring-flocks.netlify.app",
     github: "https://github.com/Djimovanberlo/soaring-flocks-client",
-  },  {
+  },
+  {
     id: 2,
     name: "Fake ID Generator",
     stack: ["React", "Redux", "CSS"],
@@ -41,7 +42,8 @@ export const projectList = [
       "Work in progress. This app helps you create an efficient shopping route in your grocery store. This to increase efficiency (and for me, so I don't get lost). Also helps reduce crowds for COVID. Administrators can add grocery stores and products to the database. It is a full stack app to learn TypeScript and TypeGraphQL.",
     link: null,
     github: null,
-  },{}
+  },
+  {
     id: 4,
     name: "Student Platform",
     stack: [null],
