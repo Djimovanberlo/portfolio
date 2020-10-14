@@ -20,12 +20,13 @@ const Projects = () => {
     { color: "white", backgroundColor: "#263547", border: "2px solid #263547" },
   ];
 
-  // TO DO: iterate -3 instead of static. Currently only works with <= 6 projects in projectList
   const slideStyleSelector = (projectIndex) => {
-    if (projectIndex < 3) {
-      return projectIndex;
-    } else if (projectIndex >= 3) {
-      return projectIndex - 3;
+    if ((projectIndex + 1) % 3 === 0) {
+      return 2;
+    } else if ((projectIndex + 1) % 2 === 0) {
+      return 1;
+    } else {
+      return 0;
     }
   };
 
