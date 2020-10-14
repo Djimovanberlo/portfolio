@@ -9,6 +9,35 @@ import {
 import "pure-react-carousel/dist/react-carousel.es.css";
 
 const SingleProject = (props) => {
+  const githubColorCreator = (fontColor) => {
+    if (fontColor === "white") {
+      return (
+        <a
+          href={props.github}
+          target="_blank"
+          style={{
+            cursor: "pointer",
+            filter: "invert(1)",
+          }}
+        >
+          <img src={require("../img/icons/Github.png")} />
+        </a>
+      );
+    } else {
+      return (
+        <a
+          href={props.github}
+          target="_blank"
+          style={{
+            cursor: "pointer",
+          }}
+        >
+          <img src={require("../img/icons/Github.png")} />
+        </a>
+      );
+    }
+  };
+
   return (
     <Slide
       index={props.id}
@@ -113,17 +142,7 @@ const SingleProject = (props) => {
             justifyContent: "flex-end",
           }}
         >
-          {props.github ? (
-            <a
-              href={props.github}
-              target="_blank"
-              style={{
-                cursor: "pointer",
-              }}
-            >
-              <img src={require("../img/icons/Github.png")} />
-            </a>
-          ) : null}
+          {props.github ? githubColorCreator(props.slideFontColor) : null}
         </div>
       </div>
     </Slide>

@@ -88,7 +88,9 @@ const About = () => {
               <div className="dot" /> <div className="dot" />
             </div>
             <div>French</div>
-            <div className="dot" />
+            <div>
+              <div className="dot" />
+            </div>
           </div>
         </div>
         <div style={{ gridArea: "1 / 3 / 2 / 4", textAlign: "justify" }}>
@@ -101,6 +103,7 @@ const About = () => {
           <br />
           Oxfam Novib Trailwalker Sponsored 100km hike within one day for
           educational projects in Myanmar.
+          <br />
           <br />
           113Online.nl Suicide prevention Primary care chatting and telephoning
           to prevent suicide.
