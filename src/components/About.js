@@ -74,19 +74,42 @@ const About = () => {
             }}
           >
             <div>Dutch</div>
-            <div className="dot" />
-            <div>English</div>
-            <div>b</div>
+            <div>
+              <div className="dot" /> <div className="dot" />{" "}
+              <div className="dot" />
+            </div>
+            <div>English</div>{" "}
+            <div>
+              <div className="dot" /> <div className="dot" />{" "}
+              <div className="dot" />
+            </div>
             <div>Norwegian</div>
-            <div>c</div>
+            <div>
+              <div className="dot" /> <div className="dot" />
+            </div>
             <div>French</div>
-            <div>d</div>
+            <div className="dot" />
           </div>
         </div>
         <div style={{ gridArea: "1 / 3 / 2 / 4", textAlign: "justify" }}>
           Personal achievements
           <br />
-          <br />- Being generally a pretty nice guy to be honest
+          <br />
+          Exchange student to Tromsø One year in a Norwegian school and
+          Norwegian family on my 16th.
+          <br />
+          <br />
+          Oxfam Novib Trailwalker Sponsored 100km hike within one day for
+          educational projects in Myanmar.
+          <br />
+          113Online.nl Suicide prevention Primary care chatting and telephoning
+          to prevent suicide.
+          <br />
+          <br />
+          Working as a mailman in my hometown of Utrecht, NL for over 10 years.
+          <br />
+          <br />
+          Being generally a pretty nice guy to be honest
         </div>
       </div>
       <button className="button">Download resume</button>
