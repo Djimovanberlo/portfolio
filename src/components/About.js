@@ -63,8 +63,8 @@ const About = () => {
           Other skills
           <br />
           <br />
-          Psychology, game development, training, coaching, scientific research,
-          socratic dialogue, event organization, film making
+          Game development, training, coaching, scientific research, socratic
+          dialogue, event organization, film making
         </div>
         <div style={{ gridArea: "2 / 1 / 3 / 2", textAlign: "justify" }}>
           <br />
