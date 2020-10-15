@@ -56,7 +56,7 @@ export const projectList = [
     name: "Talent Calculator",
     stack: ["React", "Redux", "CSS"],
     description:
-      "I'd like to rebuild World of Warcraft classic's talent calculator, or even build a calculator-maker. I like to fantasize about game- and character design, and rebuilding this would be a very doable and fun challange.",
+      "I'd like to rebuild World of Warcraft classic's talent calculator, or even build a calculator-maker. I like to fantasize about game- and character design, and rebuilding this would be a very doable and fun challange. It's on the list.",
     link: null,
     github: null,
   },
