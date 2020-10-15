@@ -2,8 +2,10 @@ import React from "react";
 import "../styles/about.css";
 
 import { techSkills } from "../constants/techSkills";
+// import CV_Djimo_van_Berlo from "/CV_Djimo_van_Berlo.pdf";
 
 const About = () => {
+  // console.log(CV_Djimo_van_Berlo, typeof CV_Djimo_van_Berlo);
   return (
     <div className="content">
       <div>
@@ -22,7 +24,10 @@ const About = () => {
         and develop some dinner. I like walk around and explore my surroundings,
         and perhaps the occasional draping-over-the-couch.
       </div>
-      <br />
+      <div></div>
+      <a href="/CV_Djimo_van_Berlo.pdf" download="CV_Djimo_van_Berlo.pdf">
+        <button className="button">Download resume</button>
+      </a>
       <div className="lineWithText">Tech skills (for now)</div>
       <br />
       <div style={{ textAlign: "center" }}>
@@ -43,14 +48,15 @@ const About = () => {
           );
         })}
       </div>
+
       <br />
-      <div className="lineWithText">TEMP SOMETHING...</div>
+      <div className="lineWithText">Additional info</div>
       <br />
       <div
         style={{
           display: "grid",
-          gridTemplateColumns: "repeat(3, 1fr)",
-          gridTemplateRows: "1fr",
+          gridTemplateColumns: "repeat(2, 1fr)",
+          gridTemplateRows: "1fr 2fr",
           gridColumnGap: 70,
         }}
       >
@@ -61,7 +67,7 @@ const About = () => {
           Psychology, game development, training, coaching, scientific research,
           socratic dialogue, event organization, film making
         </div>
-        <div style={{ gridArea: "1 / 2 / 2 / 3", textAlign: "justify" }}>
+        <div style={{ gridArea: "2 / 1 / 3 / 2", textAlign: "justify" }}>
           Languages
           <br />
           <br />
@@ -93,42 +99,31 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div style={{ gridArea: "1 / 3 / 2 / 4", textAlign: "justify" }}>
+        <div style={{ gridArea: "1 / 2 / 3 / 3", textAlign: "justify" }}>
           Personal achievements
-          <br />
-          <br />
-          Exchange student to Tromsø One year in a Norwegian school and
-          Norwegian family on my 16th.
-          <br />
-          <br />
-          Oxfam Novib Trailwalker Sponsored 100km hike within one day for
-          educational projects in Myanmar.
-          <br />
-          <br />
-          113Online.nl Suicide prevention Primary care chatting and telephoning
-          to prevent suicide.
-          <br />
-          <br />
-          Working as a mailman in my hometown of Utrecht, NL for over 10 years.
-          <br />
-          <br />
-          Being generally a pretty nice guy to be honest
+          <ul>
+            <li>
+              Exchange student to Tromsø One year in a Norwegian school and
+              Norwegian family on my 16th.
+            </li>
+            <li>
+              Oxfam Novib Trailwalker Sponsored 100km hike within one day for
+              educational projects in Myanmar.
+            </li>
+            <li>
+              113Online.nl Suicide prevention - Primary care chatting and
+              telephoning to prevent suicide.
+            </li>
+            <li>
+              Working as a mailman in my hometown of Utrecht, NL for over 10
+              years.
+            </li>
+            <li>Being generally a pretty nice guy to be honest</li>
+          </ul>
         </div>
       </div>
-      <button className="button">Download resume</button>
-      {/* TO DO: button actually downloads resume */}
-      {/* TO DO: add languages, skills, achievements content */}
     </div>
   );
 };
 
 export default About;
-
-// .div1 { grid-area: 1 / 1 / 2 / 2; }
-// .div2 { grid-area: 1 / 2 / 2 / 3; }
-// .div3 { grid-area: 2 / 1 / 3 / 2; }
-// .div4 { grid-area: 2 / 2 / 3 / 3; }
-// .div5 { grid-area: 3 / 1 / 4 / 2; }
-// .div6 { grid-area: 3 / 2 / 4 / 3; }
-// .div7 { grid-area: 4 / 1 / 5 / 2; }
-// .div8 { grid-area: 4 / 2 / 5 / 3; }

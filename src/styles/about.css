@@ -6,6 +6,7 @@
   left: 280px;
   top: 200px;
   padding: 40px;
+  margin-bottom: 20px;
 }
 
 .lineWithText {
@@ -28,11 +29,12 @@
 
 .button {
   background-color: #03989e;
+  align-self: center;
   border: 2px solid #03989e;
-  font-size: 20px;
+  font-size: 12px;
   letter-spacing: 2px;
   color: white;
-  padding: 10px;
+  padding: 5px;
   margin-top: 10px;
   margin-bottom: 10px;
   transition-duration: 0.4s;
@@ -51,4 +53,13 @@
   background-color: #03989e;
   border-radius: 50%;
   display: inline-block;
+}
+
+ul {
+  list-style: none;
+}
+
+li::before {
+  content: "• ";
+  color: #03989e;
 }
