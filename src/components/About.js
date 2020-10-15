@@ -2,8 +2,10 @@ import React from "react";
 import "../styles/about.css";
 
 import { techSkills } from "../constants/techSkills";
+// import CV_Djimo_van_Berlo from "/CV_Djimo_van_Berlo.pdf";
 
 const About = () => {
+  // console.log(CV_Djimo_van_Berlo, typeof CV_Djimo_van_Berlo);
   return (
     <div className="content">
       <div>
@@ -22,10 +24,10 @@ const About = () => {
         and develop some dinner. I like walk around and explore my surroundings,
         and perhaps the occasional draping-over-the-couch.
       </div>
-      <div>
+      <div></div>
+      <a href="/CV_Djimo_van_Berlo.pdf" download="CV_Djimo_van_Berlo.pdf">
         <button className="button">Download resume</button>
-      </div>
-
+      </a>
       <div className="lineWithText">Tech skills (for now)</div>
       <br />
       <div style={{ textAlign: "center" }}>
@@ -46,6 +48,7 @@ const About = () => {
           );
         })}
       </div>
+
       <br />
       <div className="lineWithText">Additional info</div>
       <br />
@@ -124,12 +127,3 @@ const About = () => {
 };
 
 export default About;
-
-// .div1 { grid-area: 1 / 1 / 2 / 2; }
-// .div2 { grid-area: 1 / 2 / 2 / 3; }
-// .div3 { grid-area: 2 / 1 / 3 / 2; }
-// .div4 { grid-area: 2 / 2 / 3 / 3; }
-// .div5 { grid-area: 3 / 1 / 4 / 2; }
-// .div6 { grid-area: 3 / 2 / 4 / 3; }
-// .div7 { grid-area: 4 / 1 / 5 / 2; }
-// .div8 { grid-area: 4 / 2 / 5 / 3; }
