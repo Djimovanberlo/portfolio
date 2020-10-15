@@ -15,7 +15,7 @@ const NavBar = () => {
     } else if (location.pathname === "/contact") {
       set_picture(3);
     }
-  }, []);
+  }, [location.pathname]);
 
   return (
     <>

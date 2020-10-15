@@ -8,13 +8,15 @@ const SingleProject = (props) => {
       return (
         <a
           href={props.github}
+          alt=""
           target="_blank"
+          rel="noopener noreferrer"
           style={{
             cursor: "pointer",
             filter: "invert(1)",
           }}
         >
-          <img src={require("../img/icons/Github.png")} />
+          <img src={require("../img/icons/Github.png")} alt="" />
         </a>
       );
     } else {
