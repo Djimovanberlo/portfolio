@@ -24,11 +24,12 @@ const SingleProject = (props) => {
         <a
           href={props.github}
           target="_blank"
+          rel="noopener noreferrer"
           style={{
             cursor: "pointer",
           }}
         >
-          <img src={require("../img/icons/Github.png")} />
+          <img src={require("../img/icons/Github.png")} alt="" />
         </a>
       );
     }
@@ -58,6 +59,7 @@ const SingleProject = (props) => {
         {/* ICON - START ROW 1*/}
         <img
           src={require(`../img/projects/${props.name}.png`)}
+          alt=""
           style={{
             resizeMode: "cover",
             width: 100,
@@ -93,6 +95,7 @@ const SingleProject = (props) => {
               <img
                 className="tooltip"
                 src={require(`../img/icons/${tech}.png`)}
+                alt=""
                 style={{
                   resizeMode: "cover",
                   width: 35,
@@ -121,6 +124,7 @@ const SingleProject = (props) => {
             <a
               href={props.link}
               target="_blank"
+              rel="noopener noreferrer"
               style={{
                 color: props.slideFontColor,
               }}

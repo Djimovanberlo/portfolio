@@ -33,6 +33,7 @@ const About = () => {
           return (
             <img
               className="tooltip"
+              alt=""
               src={require(`../img/icons/${tech}.png`)}
               style={{
                 resizeMode: "cover",

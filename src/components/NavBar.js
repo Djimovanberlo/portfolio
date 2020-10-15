@@ -23,6 +23,8 @@ const NavBar = () => {
         src={require(`../img/djimo/Djimo${picture}.jpg`)}
         className="picture"
         style={{ zIndex: 3 }}
+        alt=""
+        rel="noopener"
       />
       <div className="sidenav">
         <NavLink
