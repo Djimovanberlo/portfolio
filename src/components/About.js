@@ -2,10 +2,8 @@ import React from "react";
 import "../styles/about.css";
 
 import { techSkills } from "../constants/techSkills";
-// import CV_Djimo_van_Berlo from "/CV_Djimo_van_Berlo.pdf";
 
 const About = () => {
-  // console.log(CV_Djimo_van_Berlo, typeof CV_Djimo_van_Berlo);
   return (
     <div className="content">
       <div>

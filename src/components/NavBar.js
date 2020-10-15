@@ -1,14 +1,10 @@
 import React, { useState, useEffect } from "react";
-import {
-  NavLink,
-  BrowserRouter as Router,
-  useLocation,
-} from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import "../styles/navBar.css";
 
 const NavBar = () => {
   const location = useLocation();
-  // console.log(location.pathname);
+
   const [picture, set_picture] = useState(1);
 
   useEffect(() => {

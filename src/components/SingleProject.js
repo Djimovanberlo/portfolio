@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  CarouselProvider,
-  Slider,
-  Slide,
-  ButtonBack,
-  ButtonNext,
-} from "pure-react-carousel";
+import { Slide } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
 
 const SingleProject = (props) => {
@@ -83,8 +77,6 @@ const SingleProject = (props) => {
         >
           {props.name}
         </div>
-        {/* GITHUB */}
-
         {/* TECH STACK - ROW 2 */}
         <div
           style={{
@@ -135,6 +127,7 @@ const SingleProject = (props) => {
             </a>
           ) : null}
         </div>
+        {/* GITHUB */}
         <div
           style={{
             gridArea: "4 / 2 / 5 / 3",
