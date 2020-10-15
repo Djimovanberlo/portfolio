@@ -1,4 +1,4 @@
-import React, { Button } from "react";
+import React from "react";
 import "../styles/contact.css";
 
 const Contact = () => {
@@ -7,20 +7,24 @@ const Contact = () => {
       <a
         href="https://github.com/Djimovanberlo"
         target="_blank"
+        rel="noopener noreferrer"
         style={{ cursor: "pointer" }}
       >
         <img
           src={require("../img/icons/Github.png")}
+          alt=""
           style={{ height: 30, width: 30, padding: 5 }}
         />
       </a>
       <a
         href="https://www.linkedin.com/in/djimo-van-berlo/"
         target="_blank"
+        rel="noopener noreferrer"
         style={{ cursor: "pointer" }}
       >
         <img
           src={require("../img/icons/LinkedIn.png")}
+          alt=""
           style={{ height: 30, width: 30, padding: 5 }}
         />
       </a>
@@ -29,6 +33,7 @@ const Contact = () => {
         style={{ textDecoration: "none", color: "#03989e" }}
         href="mailto:djimovanberlo@gmail.com"
         target="_blank"
+        rel="noopener noreferrer"
       >
         djimovanberlo@gmail.com
       </a>

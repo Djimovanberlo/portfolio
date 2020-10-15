@@ -1,14 +1,10 @@
 import React, { useState, useEffect } from "react";
-import {
-  NavLink,
-  BrowserRouter as Router,
-  useLocation,
-} from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import "../styles/navBar.css";
 
 const NavBar = () => {
   const location = useLocation();
-  // console.log(location.pathname);
+
   const [picture, set_picture] = useState(1);
 
   useEffect(() => {
@@ -19,7 +15,7 @@ const NavBar = () => {
     } else if (location.pathname === "/contact") {
       set_picture(3);
     }
-  }, []);
+  }, [location.pathname]);
 
   return (
     <>
@@ -27,6 +23,8 @@ const NavBar = () => {
         src={require(`../img/djimo/Djimo${picture}.jpg`)}
         className="picture"
         style={{ zIndex: 3 }}
+        alt=""
+        rel="noopener"
       />
       <div className="sidenav">
         <NavLink

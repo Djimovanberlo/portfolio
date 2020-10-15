@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  CarouselProvider,
-  Slider,
-  Slide,
-  ButtonBack,
-  ButtonNext,
-} from "pure-react-carousel";
+import { Slide } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
 
 const SingleProject = (props) => {
@@ -14,13 +8,15 @@ const SingleProject = (props) => {
       return (
         <a
           href={props.github}
+          alt=""
           target="_blank"
+          rel="noopener noreferrer"
           style={{
             cursor: "pointer",
             filter: "invert(1)",
           }}
         >
-          <img src={require("../img/icons/Github.png")} />
+          <img src={require("../img/icons/Github.png")} alt="" />
         </a>
       );
     } else {
@@ -28,11 +24,12 @@ const SingleProject = (props) => {
         <a
           href={props.github}
           target="_blank"
+          rel="noopener noreferrer"
           style={{
             cursor: "pointer",
           }}
         >
-          <img src={require("../img/icons/Github.png")} />
+          <img src={require("../img/icons/Github.png")} alt="" />
         </a>
       );
     }
@@ -62,6 +59,7 @@ const SingleProject = (props) => {
         {/* ICON - START ROW 1*/}
         <img
           src={require(`../img/projects/${props.name}.png`)}
+          alt=""
           style={{
             resizeMode: "cover",
             width: 100,
@@ -83,8 +81,6 @@ const SingleProject = (props) => {
         >
           {props.name}
         </div>
-        {/* GITHUB */}
-
         {/* TECH STACK - ROW 2 */}
         <div
           style={{
@@ -99,6 +95,7 @@ const SingleProject = (props) => {
               <img
                 className="tooltip"
                 src={require(`../img/icons/${tech}.png`)}
+                alt=""
                 style={{
                   resizeMode: "cover",
                   width: 35,
@@ -127,6 +124,7 @@ const SingleProject = (props) => {
             <a
               href={props.link}
               target="_blank"
+              rel="noopener noreferrer"
               style={{
                 color: props.slideFontColor,
               }}
@@ -135,6 +133,7 @@ const SingleProject = (props) => {
             </a>
           ) : null}
         </div>
+        {/* GITHUB */}
         <div
           style={{
             gridArea: "4 / 2 / 5 / 3",
