@@ -59,7 +59,7 @@ ul {
   list-style: none;
 }
 
-li::before {
+.coloredBullet::before {
   content: "• ";
   color: #03989e;
 }

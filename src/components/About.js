@@ -102,23 +102,25 @@ const About = () => {
         <div style={{ gridArea: "1 / 2 / 3 / 3", textAlign: "justify" }}>
           Personal achievements
           <ul>
-            <li>
+            <li className="coloredBullet">
               Exchange student to Tromsø One year in a Norwegian school and
               Norwegian family on my 16th.
             </li>
-            <li>
+            <li className="coloredBullet">
               Oxfam Novib Trailwalker Sponsored 100km hike within one day for
               educational projects in Myanmar.
             </li>
-            <li>
+            <li className="coloredBullet">
               113Online.nl Suicide prevention - Primary care chatting and
               telephoning to prevent suicide.
             </li>
-            <li>
+            <li className="coloredBullet">
               Working as a mailman in my hometown of Utrecht, NL for over 10
               years.
             </li>
-            <li>Being generally a pretty nice guy to be honest</li>
+            <li className="coloredBullet">
+              Being generally a pretty nice guy to be honest
+            </li>
           </ul>
         </div>
       </div>
