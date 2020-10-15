@@ -67,6 +67,7 @@ const About = () => {
           socratic dialogue, event organization, film making
         </div>
         <div style={{ gridArea: "2 / 1 / 3 / 2", textAlign: "justify" }}>
+          <br />
           Languages
           <br />
           <br />
