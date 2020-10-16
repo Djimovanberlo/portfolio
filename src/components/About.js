@@ -11,18 +11,26 @@ const About = () => {
         find my resume, some projects I have been working on and general info.
         Hang around and{" "}
         <a href="/contact" style={{ textDecoration: "none", color: "#03989e" }}>
-          Get in touch!
+          get in touch!
         </a>
         <br />
         <br />
-        In july 2020 I graduated from the Codaisseur academy, an intensive full
-        stack JavaScript bootcamp. I haven't stopped coding since. I love
-        creating new things and solving problems in an analytical and creative
-        way. In my free time I like to play with some code, cook up some games
-        and develop some dinner. I like walk around and explore my surroundings,
-        and perhaps the occasional draping-over-the-couch.
+        In july 2020 I graduated from the{" "}
+        <a
+          href="https://codaisseur.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ textDecoration: "none", color: "#03989e" }}
+        >
+          Codaisseur
+        </a>{" "}
+        academy, an intensive full stack JavaScript bootcamp. I haven't stopped
+        coding since. I love creating new things and solving problems in an
+        analytical and creative way. In my free time I like to play with some
+        code, cook up some games and develop some dinner. I like walk around and
+        explore my surroundings, and perhaps the occasional
+        draping-over-the-couch.
       </div>
-      <div></div>
       <a href="/CV_Djimo_van_Berlo.pdf" download="CV_Djimo_van_Berlo.pdf">
         <button className="button">Download resume</button>
       </a>
@@ -103,7 +111,7 @@ const About = () => {
           Personal achievements
           <ul>
             <li className="coloredBullet">
-              Exchange student to Tromsø One year in a Norwegian school and
+              Exchange student to Tromsø - One year in a Norwegian school and
               Norwegian family on my 16th.
             </li>
             <li className="coloredBullet">

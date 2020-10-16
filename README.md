@@ -1,6 +1,17 @@
-## TO DO: README
+### Djimmo | portfolio webpage
 
----
+Welcome to the github of my portfolio website. The goal of this site was to showcase some of my projects, and of course myself! As I learn more and improve my skills, this portfolio will be updated accordingly. First improvement to my site is to make it better compatible to phones and tablets.
+
+[Check out the deployed site!](https://djimo.netlify.app/)
+
+### Used technologies
+
+- React
+- CSS
+
+<p>&nbsp;</p>
+
+### ---Standard React README below---
 
 In the project directory, you can run:
 
