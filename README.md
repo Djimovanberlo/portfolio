@@ -9,6 +9,11 @@ Welcome to the github of my portfolio website. The goal of this site was to show
 - React
 - CSS
 
+### Upcoming features
+
+- Party mode! - Add animations and gorgeous styling as a global state
+- Improved scaling for browser and phone/tablet
+
 <p>&nbsp;</p>
 
 ### ---Standard React README below---
