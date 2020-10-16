@@ -1,4 +1,4 @@
-### Djimmo | portfolio webpage
+### Djimo | portfolio webpage
 
 Welcome to the github of my portfolio website. The goal of this site was to showcase some of my projects, and of course myself! As I learn more and improve my skills, this portfolio will be updated accordingly. First improvement to my site is to make it better compatible to phones and tablets.
 
