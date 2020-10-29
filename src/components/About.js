@@ -127,7 +127,7 @@ const About = () => {
               years.
             </li>
             <li className="coloredBullet">
-              Being generally a pretty nice guy to be honest
+              Being generally a pretty nice guy to be honest.
             </li>
           </ul>
         </div>
