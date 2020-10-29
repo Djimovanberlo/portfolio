@@ -27,8 +27,8 @@ const About = () => {
         academy, an intensive full stack JavaScript bootcamp. I haven't stopped
         coding since. I love creating new things and solving problems in an
         analytical and creative way. In my free time I like to play with some
-        code, cook up some games and develop some dinner. I like walk around and
-        explore my surroundings, and perhaps the occasional
+        code, cook up some games and develop some dinner. I like to walk around
+        and explore my surroundings, and perhaps the occasional
         draping-over-the-couch.
       </div>
       <a href="/CV_Djimo_van_Berlo.pdf" download="CV_Djimo_van_Berlo.pdf">
@@ -112,15 +112,15 @@ const About = () => {
           <ul>
             <li className="coloredBullet">
               Exchange student to Tromsø - One year in a Norwegian school and
-              Norwegian family on my 16th.
+              Norwegian family when I was 16.
             </li>
             <li className="coloredBullet">
               Oxfam Novib Trailwalker Sponsored 100km hike within one day for
               educational projects in Myanmar.
             </li>
             <li className="coloredBullet">
-              113Online.nl Suicide prevention - Primary care chatting and
-              telephoning to prevent suicide.
+              113Online.nl Suicide prevention - Supporting anyone in emotional
+              distress, struggling to cope, or at risk of suicide.
             </li>
             <li className="coloredBullet">
               Working as a mailman in my hometown of Utrecht, NL for over 10
