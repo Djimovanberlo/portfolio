@@ -21,7 +21,7 @@ export const projectList = [
     id: 2,
     name: "Fake ID Generator",
     stack: ["React", "Redux", "CSS"],
-    description: `Fake ID generator was our group project during the Codaisseur Academy. Within the theme "travel", we wanted to use a face-detection API, where users can add gorgeous and not so gorgeous features to their face. Working as a group went very smoothly, while we had the opportunity to be both productive and playful. This project was built in about four days, including concept and design.`,
+    description: `Fake ID generator was our group project during the Codaisseur Academy. Using 'travel' as our theme, we wanted to use a face-detection API, where users can add gorgeous and not so gorgeous features to their face. We worked well as a team, as we had the opportunity to be both productive and playful. This project was built in about four days, including concept and design.`,
     link: "https://relaxed-heisenberg-4577a7.netlify.app/",
     github: "https://github.com/wmw123/fake-id-generator",
   },
